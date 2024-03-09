@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:uiassignment/page2.dart';
 import 'package:uiassignment/widgets/Card1/card_element1.dart';
 import 'package:uiassignment/widgets/TaxiServiceCard/taxi_service_card.dart';
 import 'package:uiassignment/widgets/ContactAirportCard/contact_airport_card.dart';
@@ -21,7 +22,8 @@ class PageWidgte extends StatelessWidget {
         headerSliverBuilder: (context, innerBoxIsScrolled) {
           return <Widget>[
             const SliverAppBar(
-              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.white),
+              systemOverlayStyle:
+                  SystemUiOverlayStyle(statusBarColor: Colors.white),
               backgroundColor: Colors.white,
               surfaceTintColor: Colors.white,
               title: Column(
@@ -46,7 +48,9 @@ class PageWidgte extends StatelessWidget {
                       fontSize: 12,
                     ),
                   ),
-                  SizedBox(height: 20,)
+                  SizedBox(
+                    height: 20,
+                  )
                 ],
               ),
             )

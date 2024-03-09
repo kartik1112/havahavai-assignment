@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:uiassignment/page2.dart';
 
 class GenericButton extends StatelessWidget {
-  const GenericButton({super.key, required this.buttonIcon, required this.buttonText});
+  const GenericButton(
+      {super.key, required this.buttonIcon, required this.buttonText});
 
   final IconData buttonIcon;
   final String buttonText;
@@ -18,9 +20,16 @@ class GenericButton extends StatelessWidget {
           backgroundColor: Colors.black,
           iconColor: Colors.white,
         ),
-        onPressed: () {},
-        icon:  Icon(buttonIcon),
-        label:  Text(
+        onPressed: () {
+          print("pressed");
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: ((context) => const FlightDetailsPage()),
+            ),
+          );
+        },
+        icon: Icon(buttonIcon),
+        label: Text(
           buttonText,
           style: const TextStyle(
               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),

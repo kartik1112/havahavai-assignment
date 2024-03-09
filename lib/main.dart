@@ -9,7 +9,7 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: GoogleFonts.dmSansTextTheme()),
-      home: const FlightDetailsPage(),
+      home: const PageWidgte(),
     ),
   );
 }
