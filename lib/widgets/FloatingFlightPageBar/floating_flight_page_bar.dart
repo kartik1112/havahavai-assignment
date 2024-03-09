@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:uiassignment/page2.dart';
 import 'package:uiassignment/widgets/FloatingFlightPageBar/floating_flight_page_element.dart';
 
 class FloatingFlightPageBar extends StatelessWidget {
