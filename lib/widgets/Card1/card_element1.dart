@@ -13,7 +13,10 @@ class ImageCardElement extends StatelessWidget {
           height: 300,
           clipBehavior: Clip.hardEdge,
           decoration: const BoxDecoration(
-            image: DecorationImage(fit: BoxFit.cover,image: NetworkImage("https://plus.unsplash.com/premium_photo-1661943659036-aa040d92ee64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")),
+            image: DecorationImage(
+                fit: BoxFit.cover,
+                image: NetworkImage(
+                    "https://plus.unsplash.com/premium_photo-1661943659036-aa040d92ee64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")),
             borderRadius: BorderRadius.all(Radius.circular(12)),
             color: Colors.black,
           ),
@@ -21,7 +24,7 @@ class ImageCardElement extends StatelessWidget {
             children: [
               const Expanded(child: SizedBox()),
               Expanded(
-                flex:2,
+                flex: 2,
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Container(
@@ -52,7 +55,6 @@ class ImageCardElement extends StatelessWidget {
                                   text: "8:45 PM",
                                   subtext: "GMT+4",
                                   assetPath: "assets/time.svg",
-
                                 ),
                                 TileElement(
                                   text: "AED",
@@ -63,7 +65,9 @@ class ImageCardElement extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Divider(),
+                        Divider(
+                          color: Color.fromARGB(255, 224, 224, 224),
+                        ),
                         Expanded(
                           flex: 1,
                           child: Padding(
@@ -76,7 +80,7 @@ class ImageCardElement extends StatelessWidget {
                                   iconData: Icons.directions,
                                 ),
                                 VerticalDivider(
-                                  color: Colors.grey,
+                                  color: Color.fromARGB(255, 224, 224, 224),
                                 ),
                                 NoOutlineIconButton(
                                   iconData: Icons.phone,
